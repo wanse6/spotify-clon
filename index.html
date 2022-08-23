@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/img/ico/spotify.ico">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/dropdown-menu.js"></script>
+    <title>Spotify</title>
+</head>
+<body>
+    <div id="container">
+        <div id="row">
+            <aside id="nav-aside">
+                <nav>
+                    <div id="buttons-container">
+                        <div id="general-buttons-container">
+                            <div id="menu-button-container">
+                                <button id="menu-button">...</button>
+                            </div>
+                            <button id="home-button" class="aside-menu-option"><img src="/assets/img/ico/home.ico" alt="Inicio"><h3>Inicio</h3></button>
+                            <button class="aside-menu-option"><img src="/assets/img/ico/search.ico" alt="Buscar"><h3>Buscar</h3></button>
+                            <button class="aside-menu-option"><img src="/assets/img/ico/library.ico" alt="Tu Biblioteca"><h3>Tu Biblioteca</h3></button>
+                        </div>
+                        <div id="create-playlist-container">
+                            <button class="aside-menu-option"><img src="/assets/img/ico/add.ico" alt="Crear lista"><h3>Crear lista</h3></button>
+                            <div id="favorite-songs-container">
+                                <button class="aside-menu-option"><img src="/assets/img/ico/liked.ico" alt="Canciones favoritas"><h3>Canciones que t...</h3></button>
+                                
+                            </div>
+                        </div>
+                        
+                        <hr>
+                    </div>
+                    <div id="playlist-container">
+                        <div id="folder-arg" class="folder">
+                            <div id="first-folder" class="folder-name">
+                                <h3>ARG</h3>
+                                <p id="arg-folder-arrow">&rsaquo;</p>
+                            </div>
+                            <ul>
+                                <li>0800</li>
+                                <li>Joda</li>
+                                <li>Rock nacional</li>
+                            </ul>
+                        </div>
+                        <div id="folder-usa" class="folder">
+                            <div class="folder-name">
+                                <h3>USA</h3>
+                                <p id="usa-folder-arrow">&rsaquo;</p>
+                            </div>
+                            <ul>
+                                <li>Beverly Hills</li>
+                                <li>Rodeo Drive</li>
+                                <li>Compton</li>
+                                <li>Inglewood</li>
+                            </ul>
+                        </div>
+                        <div id="folder-other" class="folder">
+                            <div class="folder-name">
+                                <h3>Other</h3>
+                                <p id="other-folder-arrow">&rsaquo;</p>
+                            </div>
+                            <ul>
+                                <li>To play MC</li>
+                                <li>Old EDM</li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </aside>
+            <div id="main-header-container">
+                <header id="header">
+                    <div id="back-next-container">
+                        <button id="back">&lt;</button>
+                        <button id="next">&gt;</button>
+                    </div>
+                    <div id="profile-container">
+                        <div id="profile-photo"><!-- photo --></div>
+                        <div id="profile-name"><!-- name --></div>
+                        <div id="profile-arrow"><!-- arrow --></div>
+                    </div>
+                    
+                </header>
+                <main id="main-container">
+                    <div id="your-playlists-container" class="main-sections first-section">
+                        <h5>¡Buenos días!</h5>
+                    </div>
+                    <div id="listen-again-container" class="main-sections">
+                        <h5>Volver a escuchar</h5>
+                    </div>
+                    <div id="most-listened-mixes-container" class="main-sections">
+                        <h5>Tus mixes más escuchados</h5>
+                    </div>
+                    <div id="recently-listened-container" class="main-sections">
+                        <h5>Escuchado recientemente</h5>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <footer id="footer">
+            <nav>
+                <nav>
+                    <!-- nav/reproductor -->
+                </nav>
+            </nav>
+        </footer>
+    </div>
+
+</body>
+</html>

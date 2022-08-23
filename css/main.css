@@ -1,0 +1,318 @@
+
+/*---------------*/
+/* GENERAL RULES */
+
+@font-face {
+    font-family: Spotify UI;
+    src: url(../assets/font/GothamMedium_1.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Spotify UI', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    color: #d7d7d7;
+}
+
+h3 {
+    font-size: 14px;
+    margin: 0;
+}
+
+h5 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+/*--------------------*/
+/* GENERAL CONTAINERS */
+
+#container {
+    height: 100%;
+    background-color: #202020;
+    display: flex;
+    flex-direction: column;
+}
+
+#row {
+    height: 90%;
+    display: flex;
+
+}
+
+footer {
+    height: 10%;
+    display: flex;
+}
+
+/*---------------*/
+/* ASIDE SECTION */
+
+#nav-aside {
+    min-width: 210px;
+    max-width: 210px;
+    display: flex;
+    background-color: #000000;
+}
+
+#nav-aside nav {
+    padding-right: 1px; /* between aside scrollbar and main section */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#buttons-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+#general-buttons-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#create-playlist-container {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+#general-buttons-container button, #create-playlist-container button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: none;
+    background-color: #000000;
+    color: #999999;
+    transition: color .5s;
+    padding: 5px 0;
+    margin: 0;
+}
+
+#menu-button-container {
+    margin: 0 0 7px 3px;
+}
+
+#menu-button {
+    width: max-content;
+    font-size: x-large;
+    letter-spacing: 2px;
+}
+
+#favorite-songs-container h3 {
+    color: #999999;
+    transition: color .5s;
+}
+
+#general-buttons-container button:hover, #create-playlist-container button:hover, #favorite-songs-container h3:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+#general-buttons-container button img {
+    margin-right: 12px;
+    width: 30px;
+    height: 30px;
+}
+
+#create-playlist-container button img {
+    margin-right: 12px;
+    width: 27px;
+    height: 27px;
+}
+
+#favorite-songs-container {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#favorite-songs-container img {
+    border-radius: 4px;
+}
+
+hr {
+    background-color: #52525270;
+    width: 100%;
+    height: 1px;
+    border: none;
+    margin-top: 15px;
+}
+
+#playlist-container {
+    padding: 0 5px 0 20px;
+    color: #999999;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#playlist-container::-webkit-scrollbar {
+    background-color: #000000;
+    width: 12px;
+}
+
+#playlist-container::-webkit-scrollbar-thumb {
+    background-color: #4d4d4d;
+    border-bottom: 2px solid #000000;
+}
+
+.folder-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: color .5s;
+}
+
+.folder-name p, .folder-name h3, .folder li {
+    transition: color .5s;
+}
+
+.folder-name p:hover, .folder-name h3:hover, .folder li:hover{
+    color: #fff;
+    cursor: default;
+}
+
+.folder ul {
+    list-style: none;
+    padding-left: 15px;
+}
+
+.folder li {
+    margin: 20px 0;
+}
+
+#first-folder {
+    margin-top: 15px;
+}
+
+/* -------------- */
+/* HEADER SECTION */
+
+#main-header-container {
+    width: 100%;
+    height: 102%;
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#back-next-container {
+    display: flex;
+    align-items: center;
+    padding: 10px 25px;
+}
+
+#back, #next {
+    margin: 0 5px;
+    height: 35px;
+    width: 35px;
+    color: #bcbcbc;
+    font-size: large;
+    border-radius: 20px;
+    border: none;
+    background: rgba(0, 0, 0, 0.24);
+}
+
+#back, #next:hover {
+    cursor: pointer;
+}
+
+#profile-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 10px;
+    background-color: #0808088b;
+    border-radius: 15px;
+    height: 50%;
+}
+
+/*--------------*/
+/* MAIN SECTION */
+
+#main-container {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: #121212;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0 50px 0 0;
+}
+
+#main-container::-webkit-scrollbar {
+    background-color: #121212;
+    width: 12px;
+}
+
+#main-container::-webkit-scrollbar-thumb {
+    background-color: #4d4d4d;
+}
+
+.main-sections {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 30px 32px; /* 20 + #main-container scrollbar width */
+    min-height: 300px;
+    width: 100%;
+}
+
+.first-section {
+    margin-top: 30px;
+}
+
+.main-sections h5 {
+    margin: 30px 0 10px 0;
+    font-size: 24px;
+}
+
+#your-playlists-container {
+    background-color:#737373; /* ONLY TO DISTINGUISH THE BOX */
+    background-color: transparent; /* comment this line to give the box color */
+}
+
+#your-playlists-container h5 {
+    font-size: 30px;
+}
+
+#listen-again-container {
+    background-color:#852f2f; /* ONLY TO DISTINGUISH THE BOX */
+    background-color: transparent; /* comment this line to give the box color */
+}
+
+#most-listened-mixes-container {
+    background-color:#af9920; /* ONLY TO DISTINGUISH THE BOX */
+    background-color: transparent; /* comment this line to give the box color */
+}
+
+#recently-listened-container {
+    background-color: #356bbc; /* ONLY TO DISTINGUISH THE BOX */
+    background-color: transparent; /* comment this line to give the box color */
+}
+
+/*----------------*/
+/* FOOTER SECTION */
+
+#footer {
+    border-top: 1px solid #303030;
+    background-color: #181818;
+}
