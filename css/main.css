@@ -253,7 +253,8 @@ hr {
     height: 90%;
     display: flex;
     flex-direction: column;
-    background-color: #121212;
+    /* background-color: #121212; */
+    background-image: linear-gradient( #282828 ,#121212);
     overflow-y: scroll;
     overflow-x: hidden;
     padding: 0 50px 0 0;
@@ -281,7 +282,7 @@ hr {
 }
 
 .main-sections h5 {
-    margin: 30px 0 10px 0;
+    margin: 10px 0 30px 0;
     font-size: 24px;
 }
 
@@ -294,9 +295,89 @@ hr {
     font-size: 30px;
 }
 
+.main-playlist-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.playlist-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 400px;
+    height: 6rem;
+    margin: .75rem 0;
+    color: #eee;
+    background-color: #a6a6a637;
+    border-radius: .25rem;
+    transition: background-color 1s;
+}
+
+.playlist-container:hover {
+    cursor: pointer;
+    background-color: #a6a6a67c;
+}
+
+.playlist-img-container {
+    width: 5.5rem;
+    height: 100%;
+    margin-right: 1rem;
+}
+
+.playlist-img-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
 #listen-again-container {
     background-color:#852f2f; /* ONLY TO DISTINGUISH THE BOX */
     background-color: transparent; /* comment this line to give the box color */
+    margin-bottom: 5.5rem;
+}
+
+.listen-again-playlist-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.listen-again-playlist {
+    width: 190px;
+    height: 250px;
+    background-color: #282828;
+    border-radius: .25rem;
+    padding: 1rem;
+    transition: background-color .4s;
+}
+
+.listen-again-playlist:hover {
+    cursor: pointer;
+    background-color: #a6a6a635;
+}
+
+.listen-again-playlist-img-container {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 1rem;
+}
+
+.listen-again-playlist-img-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.listen-again-playlist-name {
+    color: #eee;
+    margin-bottom: .5rem;
+}
+
+.listen-again-playlist {
+    color: #989898;
 }
 
 #most-listened-mixes-container {
